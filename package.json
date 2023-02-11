@@ -1,5 +1,5 @@
 {
-  "name": "scalene-binary",
+  "name": "@scalene-scales/scalene-binary",
   "version": "1.0.0",
   "description": "A simple functional library for manipulating binary data.",
   "type": "module",
@@ -54,5 +54,9 @@
     "transform": {
       "^.+\\.[t|j]sx?$": "babel-jest"
     }
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/scalene-scales/scalene-binary/issues"
+  },
+  "homepage": "https://github.com/scalene-scales/scalene-binary#readme"
 }
