@@ -2,6 +2,14 @@ export const BYTES_IN_FLOAT64 = 8;
 
 export const BYTES_IN_DOUBLE = BYTES_IN_FLOAT64;
 
+export const BYTES_IN_FLOAT32 = 4;
+
+export const BYTES_IN_FLOAT = BYTES_IN_FLOAT32;
+
+export const BYTES_IN_UNIT32 = 4;
+
+export const BYTES_IN_INT32 = 4;
+
 export const TWO_RAISED_TO_32 = 0x100000000; // 2^32
 
 export const TWO_RAISED_TO_NEGATIVE_32 = 2.3283064365386963e-10; // 2^-32
