@@ -9,11 +9,12 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "rootDir": "src",
     "baseUrl": "src",
 
     // Output
     "declaration": true,
-    "outDir": "./dist",
+    "outDir": "dist",
 
     // Typechecking
     "strict": true,

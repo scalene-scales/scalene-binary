@@ -1,5 +1,4 @@
-import ScaleneBinary from "ScaleneBinary";
+import * as ScaleneBinary from "./lib";
 
-export * from "lib/lib";
-
+export { ScaleneBinary as ScaleneBinary };
 export default ScaleneBinary;
