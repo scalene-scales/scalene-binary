@@ -1,5 +1,5 @@
 import { Buffer } from "buffer";
-import { BYTES_IN_FLOAT32 } from "lib/constants";
+import { BYTES_IN_FLOAT32 } from "./constants";
 
 export default function encodeFloatArrayAsBase64String(
   nums: ReadonlyArray<number>
