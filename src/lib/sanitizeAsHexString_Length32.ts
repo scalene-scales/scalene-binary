@@ -1,4 +1,4 @@
-import { THexString_Length32 } from "types";
+import { THexString_Length32 } from "../types";
 
 export default function sanitizeAsHexString_Length32(
   seed: string

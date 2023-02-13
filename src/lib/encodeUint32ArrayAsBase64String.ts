@@ -1,5 +1,5 @@
 import { Buffer } from "buffer";
-import { TBase64String_BitsMod32 } from "types";
+import { TBase64String_BitsMod32 } from "../types";
 import { BYTES_IN_UINT32 } from "./constants";
 
 export default function encodeUint32ArrayAsBase64String(

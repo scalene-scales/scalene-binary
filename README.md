@@ -17,3 +17,8 @@ git config --global url."ssh://git@".insteadOf git://
 ```
 
 See https://github.com/npm/cli/issues/4896#issuecomment-1127023942 for more details.
+
+# TODO
+
+Figure out why absolute imports break whne this package is installed as a dependency.
+Figure out if there's a way to cleanly change imports from `@scalene-scales/scalene-binary/dist/lib/constants` to `@scalene-scales/scalene-binary/lib/constants`.

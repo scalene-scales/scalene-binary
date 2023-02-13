@@ -1,5 +1,5 @@
 import { Buffer } from "buffer";
-import { THexString_LengthMod8 } from "types";
+import { THexString_LengthMod8 } from "../types";
 import { BYTES_IN_UINT32 } from "./constants";
 
 export default function encodeUint32ArrayAsHexString(

@@ -1,5 +1,5 @@
 import { Buffer } from "buffer";
-import { THexString_LengthMod16 } from "types";
+import { THexString_LengthMod16 } from "../types";
 import { BYTES_IN_UINT64 } from "./constants";
 
 export default function encodeBigintOf64BitsArrayAsHexString(

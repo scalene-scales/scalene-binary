@@ -1,5 +1,5 @@
 import { Buffer } from "buffer";
-import { TBase64String_BitsMod64 } from "types";
+import { TBase64String_BitsMod64 } from "../types";
 import { BYTES_IN_FLOAT64 } from "./constants";
 
 export default function encodeDoubleArrayAsBase64String(
