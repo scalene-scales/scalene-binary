@@ -1,11 +1,11 @@
 import { Buffer } from "buffer";
-import { TBase64String_BitsMod32 } from "../types";
+import { THexString_LengthMod8 } from "../types";
 import { BYTES_IN_UNIT32 } from "./constants";
 
-export default function decodeBase64StringAsUint32Array(
-  base64: TBase64String_BitsMod32
+export default function decodeHexStringAsUint32Array(
+  hex: THexString_LengthMod8
 ): Array<number> {
-  const bytes = Buffer.from(base64, "base64");
+  const bytes = Buffer.from(hex, "hex");
   const buffer = new ArrayBuffer(bytes.length);
   const view = new DataView(buffer);
 

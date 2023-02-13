@@ -1,10 +1,10 @@
 import { Buffer } from "buffer";
-import { TBase64String_BitsMod32 } from "types";
+import { THexString_LengthMod8 } from "types";
 import { BYTES_IN_UNIT32 } from "./constants";
 
-export default function encodeUint32ArrayAsBase64String(
+export default function encodeUint32ArrayAsHexString(
   nums: ReadonlyArray<number>
-): TBase64String_BitsMod32 {
+): THexString_LengthMod8 {
   const buffer = new ArrayBuffer(BYTES_IN_UNIT32 * nums.length);
   const view = new DataView(buffer);
 
@@ -13,5 +13,5 @@ export default function encodeUint32ArrayAsBase64String(
   }
 
   const bytes = new Uint8Array(buffer);
-  return Buffer.from(bytes).toString("base64") as TBase64String_BitsMod32;
+  return Buffer.from(bytes).toString("hex") as THexString_LengthMod8;
 }

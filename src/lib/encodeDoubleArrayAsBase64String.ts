@@ -1,9 +1,10 @@
 import { Buffer } from "buffer";
+import { TBase64String_BitsMod64 } from "types";
 import { BYTES_IN_FLOAT64 } from "./constants";
 
 export default function encodeDoubleArrayAsBase64String(
   nums: ReadonlyArray<number>
-): string {
+): TBase64String_BitsMod64 {
   const buffer = new ArrayBuffer(BYTES_IN_FLOAT64 * nums.length);
   const view = new DataView(buffer);
 
@@ -12,5 +13,5 @@ export default function encodeDoubleArrayAsBase64String(
   }
 
   const bytes = new Uint8Array(buffer);
-  return Buffer.from(bytes).toString("base64");
+  return Buffer.from(bytes).toString("base64") as TBase64String_BitsMod64;
 }
