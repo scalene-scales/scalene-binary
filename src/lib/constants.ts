@@ -1,6 +1,20 @@
 export const BITS_IN_HEX_CHARACTER = 4;
 
+export const BITS_IN_UINT32 = 32;
+
+export const BITS_IN_UINT64 = 64;
+
+export const BITS_IN_FLOAT32 = 32;
+
+export const BITS_IN_FLOAT = BITS_IN_FLOAT32;
+
+export const BITS_IN_FLOAT64 = 64;
+
+export const BITS_IN_DOUBLE = BITS_IN_FLOAT64;
+
 export const HEX_CHARACTERS_IN_32_BITS = 8;
+
+export const HEX_CHARACTERS_IN_64_BITS = 16;
 
 export const BYTES_IN_FLOAT64 = 8;
 
