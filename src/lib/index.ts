@@ -5,3 +5,4 @@ export { default as decodeHexStringAsUint32Array } from "./decodeHexStringAsUint
 export { default as encodeDoubleArrayAsBase64String } from "./encodeDoubleArrayAsBase64String";
 export { default as encodeUint32ArrayAsBase64String } from "./encodeUint32ArrayAsBase64String";
 export { default as encodeUint32ArrayAsHexString } from "./encodeUint32ArrayAsHexString";
+export { default as sanitizeAsHexString_Length32 } from "./sanitizeAsHexString_Length32";
