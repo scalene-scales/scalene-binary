@@ -24,9 +24,13 @@ export const BYTES_IN_FLOAT32 = 4;
 
 export const BYTES_IN_FLOAT = BYTES_IN_FLOAT32;
 
-export const BYTES_IN_UNIT32 = 4;
+export const BYTES_IN_UINT32 = 4;
 
 export const BYTES_IN_INT32 = 4;
+
+export const BYTES_IN_UINT64 = 8;
+
+export const BYTES_IN_INT64 = 8;
 
 export const TWO_RAISED_TO_21 = 0x200000;
 

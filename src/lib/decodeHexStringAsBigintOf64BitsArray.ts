@@ -1,10 +1,10 @@
 import { Buffer } from "buffer";
 import { THexString_LengthMod8 } from "../types";
-import { BYTES_IN_UINT32 } from "./constants";
+import { BYTES_IN_UINT64 } from "./constants";
 
-export default function decodeHexStringAsUint32Array(
+export default function decodeHexStringAsBigintOf64BitsArray(
   hex: THexString_LengthMod8
-): Array<number> {
+): Array<bigint> {
   const bytes = Buffer.from(hex, "hex");
   const buffer = new ArrayBuffer(bytes.length);
   const view = new DataView(buffer);
@@ -13,9 +13,9 @@ export default function decodeHexStringAsUint32Array(
     view.setUint8(i, bytes[i]!);
   }
 
-  const uints = [];
-  for (let i = 0; i < bytes.length / BYTES_IN_UINT32; i++) {
-    uints.push(view.getUint32(BYTES_IN_UINT32 * i, true));
+  const bigints = [];
+  for (let i = 0; i < bytes.length / BYTES_IN_UINT64; i++) {
+    bigints.push(view.getBigUint64(BYTES_IN_UINT64 * i, true));
   }
-  return uints;
+  return bigints;
 }
