@@ -1,6 +1,6 @@
 {
   "name": "@scalene-scales/scalene-binary",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple functional library for manipulating binary data.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
